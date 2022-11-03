@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e6ecdf01ba70e3489b17b3f6525fec2
+guid: 2ff4c9799e22f1b4c95766cc11f47530
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
@@ -99,7 +99,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -111,7 +111,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
@@ -123,7 +123,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -135,7 +135,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
@@ -147,7 +147,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
     buildTarget: tvOS
     maxTextureSize: 2048
@@ -159,12 +159,12 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_0
+      name: FloorBricksToGrassCorner_0
       rect:
         serializedVersion: 2
         x: 0
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb65ce6f25e640a4091ffe6ba1dafb9d
-      internalID: 1532584132
+      spriteID: a0c5b007560b24040a4525b6a2501b52
+      internalID: 1632508021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_1
+      name: FloorBricksToGrassCorner_1
       rect:
         serializedVersion: 2
         x: 64
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a3186f745863d845a15ba121299198a
-      internalID: -1867118646
+      spriteID: 41c56f232e7de73418c1e61d0541ab1b
+      internalID: -212946765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_2
+      name: FloorBricksToGrassCorner_2
       rect:
         serializedVersion: 2
         x: 128
@@ -220,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2277dfae0201db40b7b04de5854ffe3
-      internalID: 139938457
+      spriteID: 006e83e42db092d4e85cfe71b635b838
+      internalID: 364015039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_3
+      name: FloorBricksToGrassCorner_3
       rect:
         serializedVersion: 2
         x: 0
@@ -241,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c85f1c2b5834d4295f71a04ed1cc1f
-      internalID: -1609605843
+      spriteID: 93d155f1cf1bd764d95cce8c2b1d6de1
+      internalID: 773973834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_4
+      name: FloorBricksToGrassCorner_4
       rect:
         serializedVersion: 2
         x: 64
@@ -262,14 +262,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe87fb3747743ac4d898a6907f9e00d9
-      internalID: 1627618905
+      spriteID: e43296bca381e7940a260a1762af9b8c
+      internalID: 1987030506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_5
+      name: FloorBricksToGrassCorner_5
       rect:
         serializedVersion: 2
         x: 128
@@ -283,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 747a1866f11dd7748af8eba49da05bf1
-      internalID: 1665664053
+      spriteID: 0e5246fdcc51ed04c845dc9a2b980ab6
+      internalID: -370798398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_6
+      name: FloorBricksToGrassCorner_6
       rect:
         serializedVersion: 2
         x: 0
@@ -304,14 +304,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f646c9242a0895641b2780f883b13a8e
-      internalID: 609963700
+      spriteID: 4e6c0b918152ba845900af77a3c6d5ce
+      internalID: 1729126223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_7
+      name: FloorBricksToGrassCorner_7
       rect:
         serializedVersion: 2
         x: 64
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49d5d1447b01e1646a9d321dcbe973d8
-      internalID: 1343004865
+      spriteID: 55767ec6ad9945d499e3d2a3beaf9626
+      internalID: 1238665333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FloorBricksToGrassSquare_8
+      name: FloorBricksToGrassCorner_8
       rect:
         serializedVersion: 2
         x: 128
@@ -346,8 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 802cebd6b1c1ad244a4f053ea49b94de
-      internalID: 623210909
+      spriteID: 8b614a2e6e120254f9bb3a5358c78c9d
+      internalID: 1949418464
       vertices: []
       indices: 
       edges: []
@@ -355,7 +355,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 26a918d8cd29d824080532489ceb0ef8
+    spriteID: 01c942af3f4958941a95786812d17475
     internalID: 0
     vertices: []
     indices: 
@@ -363,15 +363,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FloorBricksToGrassSquare_0: 1532584132
-      FloorBricksToGrassSquare_1: -1867118646
-      FloorBricksToGrassSquare_6: 609963700
-      FloorBricksToGrassSquare_4: 1627618905
-      FloorBricksToGrassSquare_5: 1665664053
-      FloorBricksToGrassSquare_2: 139938457
-      FloorBricksToGrassSquare_8: 623210909
-      FloorBricksToGrassSquare_3: -1609605843
-      FloorBricksToGrassSquare_7: 1343004865
+      FloorBricksToGrassCorner_6: 1729126223
+      FloorBricksToGrassCorner_4: 1987030506
+      FloorBricksToGrassCorner_5: -370798398
+      FloorBricksToGrassCorner_1: -212946765
+      FloorBricksToGrassCorner_0: 1632508021
+      FloorBricksToGrassCorner_2: 364015039
+      FloorBricksToGrassCorner_3: 773973834
+      FloorBricksToGrassCorner_8: 1949418464
+      FloorBricksToGrassCorner_7: 1238665333
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
