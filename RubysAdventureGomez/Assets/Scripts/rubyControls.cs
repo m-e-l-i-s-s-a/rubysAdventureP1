@@ -4,27 +4,50 @@ using UnityEngine;
 
 public class rubyControls : MonoBehaviour
 {
+//-----Publicly Declared Speed Value-----//
+    public float speed = 3.0f;
+
+//-----Publicly Declared Health Value----//
+    public int maxHealth = 5;
+    public int health { get { return currentHealth;  }}
+    int currentHealth;
+
+//-----Privately Declared RigidBody Variables-----//
     Rigidbody2D rigidbody2d;
     float horizontal;
-    floaat vertical;
+    float vertical;
+
 
     void Start()
     {
-        rigidbody2d = GetComponent<rigidbody2d>();
+     //-----Connection of RigidBody Variables-----//
+        rigidbody2d = GetComponent<Rigidbody2D>();
+
+     //-----Connection of Health Variables-----//
+        currentHealth = maxHealth;
     }
 
     
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+     //-----Input for Mopvement Variables-----//
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
     }
 
     void FixedUpdate()
     {
-        Vector2 position = transform.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        transform.position = position;
+     //-----Movement Control-----//
+        Vector2 position = rigidbody2d.position;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
+        rigidbody2d.MovePosition(position);
+    }
+
+    public void changeHealth(int amount)
+    {
+     //-----Health Change/Display-----//
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
