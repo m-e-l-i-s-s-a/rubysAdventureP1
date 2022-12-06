@@ -9,6 +9,7 @@ public class rubyControls : MonoBehaviour
 
 //-----Publicly Declared Health Value----//
     public int maxHealth = 5;
+    public float timeInvincible = 2.0f;
     public int health { get { return currentHealth;  }}
     int currentHealth;
 
@@ -33,6 +34,13 @@ public class rubyControls : MonoBehaviour
      //-----Input for Mopvement Variables-----//
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        if (isInvincible)
+        {
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0)
+                isInvincible = false;
+        }
     }
 
     void FixedUpdate()
@@ -46,6 +54,15 @@ public class rubyControls : MonoBehaviour
 
     public void changeHealth(int amount)
     {
+        if (amount < 0)
+        {
+            if (isInvincible)
+                return;
+
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
+        }
+
      //-----Health Change/Display-----//
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
