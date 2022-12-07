@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rubyControls : MonoBehaviour
+public class RubyControls : MonoBehaviour
 {
 //-----Publicly Declared Speed Value-----//
     public float speed = 3.0f;
 
-//-----Publicly Declared Health Value----//
+//-----Publicly Declared Health Values----//
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     public int health { get { return currentHealth;  }}
     int currentHealth;
 
-//-----Privately Declared RigidBody Variables-----//
+    //-----Privately Declared Invincible Values----//
+    bool isInvincible;
+    float invincibleTimer;
+
+    //-----Privately Declared RigidBody Variables-----//
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
@@ -52,7 +56,7 @@ public class rubyControls : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    public void changeHealth(int amount)
+    public void ChangeHealth(int amount)
     {
         if (amount < 0)
         {

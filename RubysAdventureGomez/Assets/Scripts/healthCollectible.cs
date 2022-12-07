@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healthCollectible : MonoBehaviour
+public class HealthCollectible : MonoBehaviour
 {
-    void onTriggerEnter2D (Collider2D other)
+    void OnTriggerEnter2D (Collider2D other)
     {
-        rubyControls controller = other.GetComponent<rubyControls>();
+        RubyControls controller = other.GetComponent<RubyControls>();
 
         if(controller != null)
         {
             if(controller.health < controller.maxHealth)
             {
-                controller.changeHealth(1);
+                controller.ChangeHealth(1);
                 Destroy(gameObject);
             }
         }
